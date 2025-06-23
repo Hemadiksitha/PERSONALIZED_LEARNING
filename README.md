@@ -43,57 +43,57 @@ A unified web platform providing personalized multiple-choice question (MCQ) pra
 
 ---
 
-## ⚙️ Installation Steps (Detailed)
+## ⚙️ Installation 
 
-### ✅ **Prerequisites**
+### Prerequisites
 - Node.js & npm
 - Python 3.x
 - pip (Python package manager)
 
-### ✅ **1️⃣ Clone the Repository**
+### Steps
 
-```bash
-git clone https://github.com/Hemadiksitha/PERSONALIZED_LEARNING.git
-cd PERSONALIZED_LEARNING
+1. Clone the Repository
+    ```bash
+    git clone https://github.com/Hemadiksitha/PERSONALIZED_LEARNING.git
+    cd PERSONALIZED_LEARNING
 
-### ✅ **2️⃣ Setup Frontend (client)**
+2. Setup Frontend (client)
+    ```bash
+    cd client
+    npm install
+    npm run build   # Optional: To build production version
+    # For development:
+    npm start
 
-```bash
-cd client
-npm install
-npm run build   # Optional: To build production version
-# For development:
-npm start
+3. Setup Editor Backend (editor-backend)
+    Open a new terminal, then:
 
-### ✅ **3️⃣ Setup Editor Backend (editor-backend)**
-Open a new terminal, then:
+    ```bash
+    cd editor-backend
+    npm install
+    # Create a `.env` file for sensitive configs if needed
+    node app.js
 
-```bash
-cd editor-backend
-npm install
-# Create a `.env` file for sensitive configs if needed
-node app.js
+    This starts the Node.js backend for the adaptive code editor.
 
-This starts the Node.js backend for the adaptive code editor.
+4. Setup Quiz Backend (quiz-backend)
+    Open another new terminal, then:
 
-### ✅ **4️⃣ Setup Quiz Backend (quiz-backend)**
-Open another new terminal, then:
+    ```bash
+    cd quiz-backend
+    # (Optional but recommended) Create a virtual environment:
+    # python -m venv venv
+    # source venv/bin/activate  (Linux/Mac)
+    # venv\Scripts\activate     (Windows)
 
-```bash
-cd quiz-backend
-# (Optional but recommended) Create a virtual environment:
-# python -m venv venv
-# source venv/bin/activate  (Linux/Mac)
-# venv\Scripts\activate     (Windows)
+    pip install -r requirements.txt
 
-pip install -r requirements.txt
+    # Run Flask server
+    python app.py
 
-# Run Flask server
-python app.py
+    This starts the Python backend for MCQ generation & evaluation.
 
-This starts the Python backend for MCQ generation & evaluation.
-
-### ✅ **5️⃣ Access the Platform**
+5. Access the Platform
     Frontend: http://localhost:3000
 
     Editor API: usually http://localhost:5000
