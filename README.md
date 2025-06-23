@@ -48,9 +48,13 @@ A unified web platform providing personalized multiple-choice question (MCQ) pra
 ## ⚙️ Installation 
 
 ### Prerequisites
-- Node.js & npm
-- Python 3.x
+
+- [Node.js](https://nodejs.org/) & npm
+- [Python 3.x](https://www.python.org/)
 - pip (Python package manager)
+- [Ollama](https://ollama.com/) installed and running locally (for the AI model used by Quiz Backend)
+
+---
 
 ### Steps
 
@@ -59,26 +63,17 @@ A unified web platform providing personalized multiple-choice question (MCQ) pra
     git clone https://github.com/Hemadiksitha/PERSONALIZED_LEARNING.git
     cd PERSONALIZED_LEARNING
 
-2. Setup Frontend (client)
-    ```bash
-    cd client
-    npm install
-    npm run build   # Optional: To build production version
-    # For development:
-    npm start
-
-3. Setup Editor Backend (editor-backend)
-    Open a new terminal, then:
+2. Start Ollama
+    ⚡ Important:
+    Make sure Ollama is installed and the required model is pulled.
+    Example:
 
     ```bash
-    cd editor-backend
-    npm install
-    # Create a `.env` file for sensitive configs if needed
-    node app.js
+    ollama pull llama2
+    ollama serve
+    Confirm that your Ollama server is running before starting the Quiz Backend.
 
-    This starts the Node.js backend for the adaptive code editor.
-
-4. Setup Quiz Backend (quiz-backend)
+3. Setup Quiz Backend (quiz-backend)
     Open another new terminal, then:
 
     ```bash
@@ -95,10 +90,30 @@ A unified web platform providing personalized multiple-choice question (MCQ) pra
 
     This starts the Python backend for MCQ generation & evaluation.
 
-5. Access the Platform
+4. Setup Editor Backend (editor-backend)
+    Open a new terminal, then:
+
+    ```bash
+    cd editor-backend
+    npm install
+    # Create a `.env` file for sensitive configs if needed
+    node app.js
+
+    This starts the Node.js backend for the adaptive code editor.
+
+5. Setup Frontend (client)
+    ```bash
+    cd client
+    npm install
+    npm run build   # Optional: To build production version
+    # For development:
+    npm start
+
+6. Access the Platform
 - Frontend: http://localhost:3000
 - Editor API: usually http://localhost:5000
 - Quiz API: usually http://localhost:5001
+- Ollama : http://localhost:11434 (default)
 
 ---
 
