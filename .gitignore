@@ -1,0 +1,51 @@
+# === General ===
+.DS_Store
+Thumbs.db
+*.log
+*.env
+*.pyc
+__pycache__/
+*.sqlite3
+
+# === Node.js (editor-backend and any Node parts) ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# === Python (quiz-backend) ===
+venv/
+ENV/
+env/
+*.pyc
+__pycache__/
+
+# === React build (client) ===
+client/node_modules/
+client/build/
+client/.env.local
+client/.env.development.local
+client/.env.test.local
+client/.env.production.local
+
+# === Logs ===
+logs/
+*.log
+
+# === IDEs ===
+.vscode/
+.idea/
+
+# === OS ===
+.DS_Store
+Thumbs.db
+
+# === Test coverage ===
+coverage/
+
+# === Misc ===
+*.tgz
+*.swp
+
+# === Optional: Ignore uploads or local files if you store them locally ===
+uploads/
