@@ -27,6 +27,8 @@ A unified web platform providing personalized multiple-choice question (MCQ) pra
 - Allows stopping quiz anytime with saved progress
 - Generates detailed hints dynamically and gives feedback
 - Stores user submissions for review
+- Download the quiz questions attended for that session in PDF
+- Streak badges for for motivation
 
 ### 📌 **Adaptive Code Editor**
 - Built-in code editor for solving coding questions
@@ -94,21 +96,19 @@ A unified web platform providing personalized multiple-choice question (MCQ) pra
     This starts the Python backend for MCQ generation & evaluation.
 
 5. Access the Platform
-    Frontend: http://localhost:3000
-
-    Editor API: usually http://localhost:5000
-
-    Quiz API: usually http://localhost:5001
+- Frontend: http://localhost:3000
+- Editor API: usually http://localhost:5000
+- Quiz API: usually http://localhost:5001
 
 ---
 
 ## 🚀 Usage
-    Register/Login using the unified dashboard.
-    Select desired topics and difficulty level for quizzes.
-    Answer MCQs; the system adjusts difficulty in real-time.
-    Switch to the Code Editor tab to solve adaptive coding questions.
-    Submit code, check results, and view hints.
-    Track progress and revisit attempted questions anytime.
+- Register/Login using the unified dashboard.
+- Select desired topics and difficulty level for quizzes.
+- Answer MCQs; the system adjusts difficulty in real-time.
+- Switch to the Code Editor tab to solve adaptive coding questions.
+- Submit code, check results, and view hints.
+- Track progress and revisit attempted questions anytime.
 
 ## 🛠️ Technologies Used
 
@@ -122,17 +122,17 @@ A unified web platform providing personalized multiple-choice question (MCQ) pra
 
 ## 🤝 Contributing
 Contributions are welcome! 🚀
-    To contribute:
-    Fork this repository.
-    Create a new branch (git checkout -b feature-branch).
-    Commit your changes (git commit -m 'Add new feature').
-    Push to your branch (git push origin feature-branch).
-    Create a Pull Request.
+To contribute:
+- Fork this repository.
+- Create a new branch (git checkout -b feature-branch).
+- Commit your changes (git commit -m 'Add new feature').
+- Push to your branch (git push origin feature-branch).
+- Create a Pull Request.
 
 ### 📄 License
 This project is licensed under the MIT License — see the LICENSE file for details.
 
 ### 📬 Contact
 For questions, ideas, or collaboration, feel free to reach out:
-GitHub: Hemadiksitha
-Email: hema.diksitha@gmail.com
+- GitHub: Hemadiksitha
+- Email: hema.diksitha@gmail.com
