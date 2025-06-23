@@ -71,7 +71,7 @@ A unified web platform providing personalized multiple-choice question (MCQ) pra
     ```bash
     ollama pull llama2
     ollama serve
-    Confirm that your Ollama server is running before starting the Quiz Backend.
+Confirm that your Ollama server is running before starting the Quiz Backend.
 
 3. Setup Quiz Backend (quiz-backend)
     Open another new terminal, then:
