@@ -88,7 +88,7 @@ Confirm that your Ollama server is running before starting the Quiz Backend.
     # Run Flask server
     python app.py
 
-    This starts the Python backend for MCQ generation & evaluation.
+This starts the Python backend for MCQ generation & evaluation.
 
 4. Setup Editor Backend (editor-backend)
     Open a new terminal, then:
@@ -99,7 +99,7 @@ Confirm that your Ollama server is running before starting the Quiz Backend.
     # Create a `.env` file for sensitive configs if needed
     node app.js
 
-    This starts the Node.js backend for the adaptive code editor.
+This starts the Node.js backend for the adaptive code editor.
 
 5. Setup Frontend (client)
     ```bash
@@ -108,6 +108,7 @@ Confirm that your Ollama server is running before starting the Quiz Backend.
     npm run build   # Optional: To build production version
     # For development:
     npm start
+This starts the React frontend for the unified dashboard.
 
 6. Access the Platform
 - Frontend: http://localhost:3000
@@ -131,7 +132,7 @@ Confirm that your Ollama server is running before starting the Quiz Backend.
 | ------------------- | -------------------------------------------------- |
 | **Frontend**        | React.js, HTML, CSS, JavaScript                    |
 | **Editor Backend**  | Node.js, Express.js, MongoDB (or file-based)       |
-| **Quiz Backend**    | Python, Flask, NLP Libraries (spaCy, transformers) |
+| **Quiz Backend**    | Python, Flask, LLM (Ollama)                        |
 | **Styling**         | CSS, Bootstrap (optional)                          |
 | **Version Control** | Git & GitHub                                       |
 
